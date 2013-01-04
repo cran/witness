@@ -4,7 +4,7 @@
 \usage{
   witness.genetic(parameter.form, data = NULL, N = 1000,
     generations = 100, pcross = 0.8, mutProb = 0.001,
-    prop.random = 0.001, gradient = 0.01,...)
+    prop.random = 0.001, gradient = 0.01, ...)
 }
 \arguments{
   \item{parameter.form}{a matrix where the rows are the
@@ -48,9 +48,6 @@
   specified probability, as well as totally new parameter
   values.
 }
-\seealso{
-\code{\link{witness.optim}}, \code{\link{witness.est}}
-}
 \examples{
 dataMatrix = matrix(c(.471, .230, .350,
 							.208, .137, .513,
@@ -70,5 +67,8 @@ params = matrix(c(rep("e", times=4),
   Clark, S. E. (2003). A memory and decision model for
   eyewitness identification. Applied Cognitive Psychology,
   17, 629-654.
+}
+\seealso{
+  \code{\link{witness.optim}}, \code{\link{witness.est}}
 }
 

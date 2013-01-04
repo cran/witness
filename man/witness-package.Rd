@@ -1,35 +1,19 @@
-\name{witness-package}
-\alias{witness-package}
-\alias{witness}
 \docType{package}
-\title{
-This package fits eyewitness data using Clark's (2003) WITNESS model
-}
+\name{witness-package}
+\alias{witness}
+\alias{witness-package}
+\title{This package fits eyewitness data using Clark's (2003) WITNESS model}
 \description{
-WITNESS is a computational memory model for eyewitness identification. This package is able to
-estimate probabilities based on user-inputted parameters as well as find optimal parameters
-using a steepest-descent and/or a genetic algorithm. 
+  WITNESS is a computational memory model for eyewitness
+  identification. This package is able to estimate
+  probabilities based on user-inputted parameters as well
+  as find optimal parameters using a steepest-descent
+  and/or a genetic algorithm.
 }
 \details{
-\tabular{ll}{
-Package: \tab witness\cr
-Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2012-10-25\cr
-License: \tab GNU 2\cr
-}
-}
-\author{
-Maintainer: Dustin Fife <fife.dustin@gmail.com>
-}
-\references{
-  Clark, S. E. (2003). A memory and decision model for
-  eyewitness identification. Applied Cognitive Psychology,
-  17, 629-654.
-}
-\keyword{ package }
-\seealso{
-NONE
+  \tabular{ll}{ Package: \tab witness\cr Type: \tab
+  Package\cr Version: \tab 1.0\cr Date: \tab 2012-10-25\cr
+  License: \tab GNU 2\cr }
 }
 \examples{
 # create data matrix
@@ -48,3 +32,16 @@ params = matrix(c(rep("e", times=4),
 est = witness.est(parameters=params, data=dataMatrix, meth="WITC", sample.size=100)
 est
 }
+\author{
+  Maintainer: Dustin Fife <fife.dustin@gmail.com>
+}
+\references{
+  Clark, S. E. (2003). A memory and decision model for
+  eyewitness identification. Applied Cognitive Psychology,
+  17, 629-654.
+}
+\seealso{
+  NONE
+}
+\keyword{package}
+

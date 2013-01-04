@@ -2,15 +2,20 @@ Package: witness
 Type: Package
 Title: This package fits eyewitness data using Clark's (2003) WITNESS
         model
-Version: 1.0
+Version: 1.1
 Date: 2013-01-04
 Author: Dustin Fife
 Maintainer: Dustin Fife <fife.dustin@gmail.com>
-Description: WITNESS is a computational model intended to understand
-        the psychological processes underlying eyewitness
-        identification. This package contains the WITNESS computational
-        model as well as two methods of fitting the model to data.
+Description: WITNESS is a computational model intended to understand the
+    psychological processes underlying eyewitness identification. This package
+    contains the WITNESS computational model as well as two methods of fitting
+    the model to data.
 License: GPL-2
-Packaged: 2013-02-08 15:43:00 UTC; dustinfife
+Collate: 'fitOpWit.R' 'match.position.R' 'parentsFun.R'
+        'witness-internal.R' 'witness-package.R' 'witness.est.r'
+        'witness.genetic.R' 'witness.optim.R'
+        'witness.starting.params.R' 'witness.test.r'
+Packaged: 2013-09-20 15:52:43 UTC; fifed
+NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2013-02-08 17:19:02
+Date/Publication: 2013-09-20 18:14:23
