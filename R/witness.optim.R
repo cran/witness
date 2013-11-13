@@ -35,8 +35,7 @@
 #'# fit = witness.optim(params, data.set=dataMatrix, sample.size=100, meth="WITC")
 #'# fit
 #'@export
-witness.optim <-
-function(param.form, data.set, generate.new=TRUE,...){
+witness.optim <-function(param.form, data.set, generate.new=TRUE,...){
 	if (generate.new){
 		random.params = witness.starting.params(param.form)
 	} else { random.params = param.form }

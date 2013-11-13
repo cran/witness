@@ -24,8 +24,7 @@
 #'st = witness.starting.params(params)
 #'st
 #'@export
-witness.starting.params <-
-function(parameter.form, values=NULL){
+witness.starting.params <-function(parameter.form, values=NULL){
 	parameter.start.values = matrix(nrow=nrow(parameter.form), ncol=5)
 	s=1
 	for (i in 1:5){

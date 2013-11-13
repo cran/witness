@@ -8,3 +8,8 @@
 	* witness.est,
 		Fixed a bug with the resetting of the random number
 		generator
+
+2013-11-20 dustinfife
+
+	* witness.genetic,
+		fixed a but

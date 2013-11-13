@@ -44,8 +44,7 @@
 #'		####### do genetic algorithm (commented b/c it takes a while)
 #'#fit = witness.genetic(params, data=dataMatrix, N=10, generations=1, sample.size=100, meth="WITC")
 #'@export
-witness.genetic <-
-function(parameter.form, data=NULL, 
+witness.genetic <-function(parameter.form, data=NULL, 
 				N=1000, generations=100, pcross=.8, 
 				mutProb=.001, prop.random=.001, gradient=.01,...){
 			
@@ -66,11 +65,12 @@ function(parameter.form, data=NULL,
 	k=0
 	
 	######## optimize the best ever fits
-	opfit = witness.optim(bestEv.par, data.set=data, ...)	
-	bestEv = opfit$value
+	opfit = witness.optim(bestEv.par, data.set=data, ...)
+	print(opfit)	
+	bestEv = opfit$fit
 	bestEv.par = witness.starting.params(parameter.form, values=opfit$par)
 	parent.array[,,which(fit.matrix==min(fit.matrix))] = bestEv.par
-	
+
 	
 		print(paste("optimal fit:", round(min(fit.matrix), digits=4)))
 		print(paste("average fit:", round(mean(fit.matrix), digits=4)))	
@@ -121,6 +121,8 @@ function(parameter.form, data=NULL,
 
 		###### see if new fit surpasses previous fit
 		new.Best = min(fit.matrix)
+		print(new.Best)
+	print(paste("3:", bestEv))
 		if (new.Best<bestEv){
 			bestEv = new.Best
 			bestEv.par = nxtgen[,,which(fit.matrix==min(fit.matrix))]

@@ -124,8 +124,7 @@
 #'est = witness.est(parameters=params, data=dataMatrix, meth="WITC", sample.size=100)
 #'est
 #'@export
-witness.est <-
-function(parameters, guilty=NULL, perp.removed=NULL, data = NULL, ilen = 100, lsize=6, meth="WITC", suspectMatch=FALSE, seedit=TRUE, sample.size=1000, optim = FALSE, goodFoil=FALSE){
+witness.est <- function(parameters, guilty=NULL, perp.removed=NULL, data = NULL, ilen = 100, lsize=6, meth="WITC", suspectMatch=FALSE, seedit=TRUE, sample.size=1000, optim = FALSE, goodFoil=FALSE){
 	
 		###### parameter matrix of the following form: 
 		###### rows=dataset, cols=c, ssp, ssf, criteria, and wa
